@@ -72,7 +72,7 @@ documentation:
     enabled: true
     branch: "gh-pages"
     folder: "docs"
-    custom_domain: ""  # Optional: your-domain.com
+    custom_domain: ""  # Optional: www.legal-prejudice-analysis.com
   
   # Auto-update settings
   auto_update:
@@ -170,10 +170,10 @@ workflows:
     auto_assign:
       enabled: true
       default_assignees:
-        - "your-username"
+        - "swptcw"
       rules:
         - contains: "docker"
-          assign_to: "your-username"
+          assign_to: "swptcw"
     
     templates:
       enabled: true
@@ -214,7 +214,7 @@ notifications:
     email:
       enabled: true
       recipients:
-        - "your-email@example.com"
+        - "tim@swptcw.com"
       events:
         - "deployment_success"
         - "deployment_failure"
