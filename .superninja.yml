@@ -37,7 +37,7 @@ docker:
   # Registry settings
   registry:
     provider: "docker_hub"  # or "github", "aws_ecr", "azure_acr", etc.
-    namespace: "your-org-name"  # Your Docker Hub username or organization
+    namespace: "swptcw"  # Your Docker Hub username or organization
     repository_prefix: "legal-prejudice"
     auto_tag:
       use_semver: true
@@ -72,7 +72,7 @@ documentation:
     enabled: true
     branch: "gh-pages"
     folder: "docs"
-    custom_domain: ""  # Optional: www.legal-prejudice-analysis.com
+    custom_domain: ""  # Optional: legal-prejudice-analysis.org
   
   # Auto-update settings
   auto_update:
