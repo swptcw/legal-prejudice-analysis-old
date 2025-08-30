@@ -37,7 +37,7 @@ For a complete deployment of all services:
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/legal-prejudice-analysis.git
+git clone https://github.com/swptcw/legal-prejudice-analysis.git
 cd legal-prejudice-analysis
 
 # Launch with Docker Compose
@@ -67,4 +67,4 @@ Contributions are welcome! Please see our [Contributing Guidelines](CONTRIBUTING
 
 ## Support
 
-For questions, support, or feedback, please [open an issue](https://github.com/yourusername/legal-prejudice-analysis/issues/new) or contact us at your-email@example.com.
+For questions, support, or feedback, please [open an issue](https://github.com/swptcw/legal-prejudice-analysis/issues/new) or contact us at tim@swptcw.com.
