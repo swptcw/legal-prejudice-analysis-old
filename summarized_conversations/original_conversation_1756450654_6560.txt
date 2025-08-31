@@ -1,0 +1,1 @@
+{'role': 'assistant', 'content': '## Researching Judicial Bias Case Law\n\nLet\'s look at some case law on judicial bias to understand how courts have interpreted and applied these concepts.\n\n<function_calls>\n<web-search query="landmark cases on judicial bias prejudice recusal standards" num_results="10">\n</web-search>\n</function_calls>', 'tool_calls': None}

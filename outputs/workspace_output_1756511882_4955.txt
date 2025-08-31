@@ -1,0 +1,3 @@
+drwxr-xr-x    2 legafvnf   legafvnf         4096 Aug 29 19:57 .
+drwxr-xr-x    2 legafvnf   legafvnf         4096 Aug 29 19:57 ..
+-rw-------    1 legafvnf   legafvnf            4 Aug 29 19:57 .ftpquota

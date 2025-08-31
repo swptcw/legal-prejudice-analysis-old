@@ -1,0 +1,1 @@
+{'role': 'assistant', 'content': 'I notice you\'ve uploaded a screenshot, but I need to use a special tool to view it. Let me take a look:\n\n<function_calls>\n<see-image file_path="/workspace/Screenshot 2025-08-29 085751.png">\n</see-image>\n</function_calls>', 'tool_calls': None}

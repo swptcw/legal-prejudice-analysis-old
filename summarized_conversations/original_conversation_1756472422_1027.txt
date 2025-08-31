@@ -1,0 +1,1 @@
+{'role': 'assistant', 'content': "Great! The server is now running on port 8888. Let's expose this port so you can access the application:\n\n<function_calls>\n<expose-port>\n8888\n</expose-port>\n</function_calls>", 'tool_calls': None}

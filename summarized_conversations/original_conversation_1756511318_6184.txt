@@ -1,0 +1,1 @@
+{'role': 'user', 'content': 'create placeholder images '}

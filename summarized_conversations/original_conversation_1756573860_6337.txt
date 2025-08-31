@@ -1,0 +1,1 @@
+{'role': 'user', 'content': 'conf \n\n[Uploaded File: /workspace/legafvnf.coreftp]\n[Uploaded File: /workspace/Secure legafvnf.coreftp]'}

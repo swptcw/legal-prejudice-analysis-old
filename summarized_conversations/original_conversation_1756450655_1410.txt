@@ -1,0 +1,1 @@
+{'role': 'assistant', 'content': '## Examining Landmark Supreme Court Case on Judicial Bias\n\nLet\'s look at the Liteky v. United States case, which appears to be a landmark Supreme Court case on judicial bias.\n\n<function_calls>\n<scrape-webpage url="https://supreme.justia.com/cases/federal/us/510/540/">\n</scrape-webpage>\n</function_calls>', 'tool_calls': None}

@@ -1,0 +1,1 @@
+{'role': 'assistant', 'content': '## Researching Judicial Bias and Prejudice\n\nNow let\'s look at the federal statute on bias or prejudice of judges to understand the legal standards in this area.\n\n<function_calls>\n<scrape-webpage url="https://www.law.cornell.edu/uscode/text/28/144">\n</scrape-webpage>\n</function_calls>', 'tool_calls': None}

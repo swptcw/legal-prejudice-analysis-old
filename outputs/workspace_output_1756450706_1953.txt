@@ -1,0 +1,10 @@
+total 116
+drwxr-xr-x 4 root root  4096 Aug 29 06:58 .
+drwxr-xr-x 1 root root   122 Aug 29 06:38 ..
+-rw-r--r-- 1 root root 11852 Aug 29 06:43 legal_prejudice_analysis_framework.md
+-rw-r--r-- 1 root root 37790 Aug 29 06:49 legal_prejudice_case_studies.md
+-rw-r--r-- 1 root root 24056 Aug 29 06:45 legal_prejudice_risk_probability_analysis.md
+drwxr-xr-x 2 root root    50 Aug 29 06:58 outputs
+-rw-r--r-- 1 root root 26869 Aug 29 06:47 practical_guide_legal_prejudice_analysis.md
+drwxr-xr-x 2 root root  4096 Aug 29 06:58 summarized_conversations
+-rw-r--r-- 1 root root  1614 Aug 29 06:39 todo.md

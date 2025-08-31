@@ -1,0 +1,1011 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legal Prejudice Risk Calculator | Advanced Assessment Tool</title>
+    <meta name="description" content="Advanced calculator for assessing and analyzing potential legal prejudice in judicial proceedings with sophisticated risk analysis.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://sites.super.myninja.ai/_assets/ninja-daytona-script.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="/">
+                        <img src="assets/logo.png" alt="Legal Prejudice Analysis Logo">
+                        <span>Legal Prejudice Analysis</span>
+                    </a>
+                </div>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="#" class="active">Risk Calculator</a></li>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">Resources</a></li>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#" class="login-btn"><i class="fas fa-user"></i> Login</a></li>
+                    </ul>
+                </nav>
+                <button class="mobile-menu-toggle" aria-label="Toggle Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="calculator-container">
+        <div class="container">
+            <div class="calculator-header">
+                <h1>Legal Prejudice Risk Calculator</h1>
+                <p class="calculator-subtitle">Advanced assessment tool for evaluating potential judicial prejudice</p>
+            </div>
+            
+            <div class="calculator-wrapper">
+                <!-- Progress Bar -->
+                <div class="progress-container">
+                    <div class="progress-bar">
+                        <div class="progress" id="assessment-progress" style="width: 0%"></div>
+                    </div>
+                    <div class="progress-steps">
+                        <div class="progress-step active" data-step="case-info">
+                            <div class="step-icon"><i class="fas fa-gavel"></i></div>
+                            <div class="step-label">Case Info</div>
+                        </div>
+                        <div class="progress-step" data-step="relationship-factors">
+                            <div class="step-icon"><i class="fas fa-users"></i></div>
+                            <div class="step-label">Relationship</div>
+                        </div>
+                        <div class="progress-step" data-step="conduct-factors">
+                            <div class="step-icon"><i class="fas fa-comments"></i></div>
+                            <div class="step-label">Conduct</div>
+                        </div>
+                        <div class="progress-step" data-step="contextual-factors">
+                            <div class="step-icon"><i class="fas fa-balance-scale"></i></div>
+                            <div class="step-label">Context</div>
+                        </div>
+                        <div class="progress-step" data-step="results">
+                            <div class="step-icon"><i class="fas fa-chart-pie"></i></div>
+                            <div class="step-label">Results</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Calculator Form -->
+                <div class="calculator-form">
+                    <!-- Case Information Section -->
+                    <section class="calculator-section active" id="case-info-section">
+                        <h2>Case Information</h2>
+                        <p class="section-description">Enter basic information about the case and jurisdiction</p>
+                        
+                        <div class="form-group">
+                            <label for="case-name">Case Name/Reference</label>
+                            <input type="text" id="case-name" placeholder="e.g., Smith v. Jones">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="case-number">Case Number (optional)</label>
+                            <input type="text" id="case-number" placeholder="e.g., CV-2025-12345">
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="jurisdiction">Jurisdiction</label>
+                                <select id="jurisdiction">
+                                    <option value="">Select Jurisdiction</option>
+                                    <option value="federal">Federal</option>
+                                    <option value="state">State</option>
+                                    <option value="local">Local</option>
+                                    <option value="administrative">Administrative</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="court-type">Court Type</label>
+                                <select id="court-type">
+                                    <option value="">Select Court Type</option>
+                                    <option value="trial">Trial Court</option>
+                                    <option value="appellate">Appellate Court</option>
+                                    <option value="supreme">Supreme Court</option>
+                                    <option value="specialized">Specialized Court</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="judge-name">Judge Name</label>
+                            <input type="text" id="judge-name" placeholder="e.g., Hon. Robert Williams">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="case-description">Brief Case Description</label>
+                            <textarea id="case-description" rows="3" placeholder="Briefly describe the nature of the case"></textarea>
+                        </div>
+                        
+                        <div class="form-actions">
+                            <button type="button" class="btn btn-primary next-section" data-next="relationship-factors">Continue to Relationship Factors</button>
+                        </div>
+                    </section>
+                    
+                    <!-- Relationship Factors Section -->
+                    <section class="calculator-section" id="relationship-factors-section">
+                        <h2>Relationship Factors</h2>
+                        <p class="section-description">Assess factors related to relationships between the judge and parties</p>
+                        
+                        <div class="factor-group">
+                            <h3>Prior Representation</h3>
+                            
+                            <div class="factor-item">
+                                <div class="factor-question">
+                                    <p>Has the judge previously represented any party in the case?</p>
+                                </div>
+                                <div class="factor-controls">
+                                    <div class="toggle-group">
+                                        <label class="toggle">
+                                            <input type="radio" name="prior-representation" value="no">
+                                            <span class="toggle-label">No</span>
+                                        </label>
+                                        <label class="toggle">
+                                            <input type="radio" name="prior-representation" value="yes">
+                                            <span class="toggle-label">Yes</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="factor-details" id="prior-representation-details">
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label for="prior-representation-likelihood">Likelihood</label>
+                                            <div class="rating-control">
+                                                <div class="rating" data-rating="0" id="prior-representation-likelihood">
+                                                    <span class="rating-item" data-value="1"><i class="far fa-circle"></i></span>
+                                                    <span class="rating-item" data-value="2"><i class="far fa-circle"></i></span>
+                                                    <span class="rating-item" data-value="3"><i class="far fa-circle"></i></span>
+                                                    <span class="rating-item" data-value="4"><i class="far fa-circle"></i></span>
+                                                    <span class="rating-item" data-value="5"><i class="far fa-circle"></i></span>
+                                                </div>
+                                                <div class="rating-label">Not Selected</div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="prior-representation-impact">Impact</label>
+                                            <div class="rating-control">
+                                                <div class="rating" data-rating="0" id="prior-representation-impact">
+                                                    <span class="rating-item" data-value="1"><i class="far fa-circle"></i></span>
+                                                    <span class="rating-item" data-value="2"><i class="far fa-circle"></i></span>
+                                                    <span class="rating-item" data-value="3"><i class="far fa-circle"></i></span>
+                                                    <span class="rating-item" data-value="4"><i class="far fa-circle"></i></span>
+                                                    <span class="rating-item" data-value="5"><i class="far fa-circle"></i></span>
+                                                </div>
+                                                <div class="rating-label">Not Selected</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="prior-representation-notes">Notes</label>
+                                        <textarea id="prior-representation-notes" rows="2" placeholder="Add details about the prior representation"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="factor-item">
+                                <div class="factor-question">
+                                    <p>Has the judge's former law firm represented any party?</p>
+                                </div>
+                                <div class="factor-controls">
+                                    <div class="toggle-group">
+                                        <label class="toggle">
+                                            <input type="radio" name="firm-representation" value="no">
+                                            <span class="toggle-label">No</span>
+                                        </label>
+                                        <label class="toggle">
+                                            <input type="radio" name="firm-representation" value="yes">
+                                            <span class="toggle-label">Yes</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="factor-details" id="firm-representation-details">
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label for="firm-representation-likelihood">Likelihood</label>
+                                            <div class="rating-control">
+                                                <div class="rating" data-rating="0" id="firm-representation-likelihood">
+                                                    <span class="rating-item" data-value="1"><i class="far fa-circle"></i></span>
+                                                    <span class="rating-item" data-value="2"><i class="far fa-circle"></i></span>
+                                                    <span class="rating-item" data-value="3"><i class="far fa-circle"></i></span>
+                                                    <span class="rating-item" data-value="4"><i class="far fa-circle"></i></span>
+                                                    <span class="rating-item" data-value="5"><i class="far fa-circle"></i></span>
+                                                </div>
+                                                <div class="rating-label">Not Selected</div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="firm-representation-impact">Impact</label>
+                                            <div class="rating-control">
+                                                <div class="rating" data-rating="0" id="firm-representation-impact">
+                                                    <span class="rating-item" data-value="1"><i class="far fa-circle"></i></span>
+                                                    <span class="rating-item" data-value="2"><i class="far fa-circle"></i></span>
+                                                    <span class="rating-item" data-value="3"><i class="far fa-circle"></i></span>
+                                                    <span class="rating-item" data-value="4"><i class="far fa-circle"></i></span>
+                                                    <span class="rating-item" data-value="5"><i class="far fa-circle"></i></span>
+                                                </div>
+                                                <div class="rating-label">Not Selected</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="firm-representation-notes">Notes</label>
+                                        <textarea id="firm-representation-notes" rows="2" placeholder="Add details about the firm representation"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="factor-group">
+                            <h3>Financial Interests</h3>
+                            
+                            <div class="factor-item">
+                                <div class="factor-question">
+                                    <p>Does the judge have a financial interest in any party?</p>
+                                </div>
+                                <div class="factor-controls">
+                                    <div class="toggle-group">
+                                        <label class="toggle">
+                                            <input type="radio" name="financial-interest" value="no">
+                                            <span class="toggle-label">No</span>
+                                        </label>
+                                        <label class="toggle">
+                                            <input type="radio" name="financial-interest" value="yes">
+                                            <span class="toggle-label">Yes</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="factor-details" id="financial-interest-details">
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label for="financial-interest-likelihood">Likelihood</label>
+                                            <div class="rating-control">
+                                                <div class="rating" data-rating="0" id="financial-interest-likelihood">
+                                                    <span class="rating-item" data-value="1"><i class="far fa-circle"></i></span>
+                                                    <span class="rating-item" data-value="2"><i class="far fa-circle"></i></span>
+                                                    <span class="rating-item" data-value="3"><i class="far fa-circle"></i></span>
+                                                    <span class="rating-item" data-value="4"><i class="far fa-circle"></i></span>
+                                                    <span class="rating-item" data-value="5"><i class="far fa-circle"></i></span>
+                                                </div>
+                                                <div class="rating-label">Not Selected</div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="financial-interest-impact">Impact</label>
+                                            <div class="rating-control">
+                                                <div class="rating" data-rating="0" id="financial-interest-impact">
+                                                    <span class="rating-item" data-value="1"><i class="far fa-circle"></i></span>
+                                                    <span class="rating-item" data-value="2"><i class="far fa-circle"></i></span>
+                                                    <span class="rating-item" data-value="3"><i class="far fa-circle"></i></span>
+                                                    <span class="rating-item" data-value="4"><i class="far fa-circle"></i></span>
+                                                    <span class="rating-item" data-value="5"><i class="far fa-circle"></i></span>
+                                                </div>
+                                                <div class="rating-label">Not Selected</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="financial-interest-notes">Notes</label>
+                                        <textarea id="financial-interest-notes" rows="2" placeholder="Add details about the financial interest"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="factor-group">
+                            <h3>Personal Relationships</h3>
+                            
+                            <div class="factor-item">
+                                <div class="factor-question">
+                                    <p>Does the judge have a personal relationship with any party or counsel?</p>
+                                </div>
+                                <div class="factor-controls">
+                                    <div class="toggle-group">
+                                        <label class="toggle">
+                                            <input type="radio" name="personal-relationship" value="no">
+                                            <span class="toggle-label">No</span>
+                                        </label>
+                                        <label class="toggle">
+                                            <input type="radio" name="personal-relationship" value="yes">
+                                            <span class="toggle-label">Yes</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="factor-details" id="personal-relationship-details">
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label for="personal-relationship-likelihood">Likelihood</label>
+                                            <div class="rating-control">
+                                                <div class="rating" data-rating="0" id="personal-relationship-likelihood">
+                                                    <span class="rating-item" data-value="1"><i class="far fa-circle"></i></span>
+                                                    <span class="rating-item" data-value="2"><i class="far fa-circle"></i></span>
+                                                    <span class="rating-item" data-value="3"><i class="far fa-circle"></i></span>
+                                                    <span class="rating-item" data-value="4"><i class="far fa-circle"></i></span>
+                                                    <span class="rating-item" data-value="5"><i class="far fa-circle"></i></span>
+                                                </div>
+                                                <div class="rating-label">Not Selected</div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="personal-relationship-impact">Impact</label>
+                                            <div class="rating-control">
+                                                <div class="rating" data-rating="0" id="personal-relationship-impact">
+                                                    <span class="rating-item" data-value="1"><i class="far fa-circle"></i></span>
+                                                    <span class="rating-item" data-value="2"><i class="far fa-circle"></i></span>
+                                                    <span class="rating-item" data-value="3"><i class="far fa-circle"></i></span>
+                                                    <span class="rating-item" data-value="4"><i class="far fa-circle"></i></span>
+                                                    <span class="rating-item" data-value="5"><i class="far fa-circle"></i></span>
+                                                </div>
+                                                <div class="rating-label">Not Selected</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="personal-relationship-notes">Notes</label>
+                                        <textarea id="personal-relationship-notes" rows="2" placeholder="Add details about the personal relationship"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-actions">
+                            <button type="button" class="btn btn-secondary prev-section" data-prev="case-info">Back</button>
+                            <button type="button" class="btn btn-primary next-section" data-next="conduct-factors">Continue to Conduct Factors</button>
+                        </div>
+                    </section>
+                    
+                    <!-- Conduct Factors Section -->
+                    <section class="calculator-section" id="conduct-factors-section">
+                        <h2>Conduct Factors</h2>
+                        <p class="section-description">Assess factors related to judicial conduct and statements</p>
+                        
+                        <div class="factor-group">
+                            <h3>In-Court Statements</h3>
+                            
+                            <div class="factor-item">
+                                <div class="factor-question">
+                                    <p>Has the judge made biased statements during proceedings?</p>
+                                </div>
+                                <div class="factor-controls">
+                                    <div class="toggle-group">
+                                        <label class="toggle">
+                                            <input type="radio" name="biased-statements" value="no">
+                                            <span class="toggle-label">No</span>
+                                        </label>
+                                        <label class="toggle">
+                                            <input type="radio" name="biased-statements" value="yes">
+                                            <span class="toggle-label">Yes</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="factor-details" id="biased-statements-details">
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label for="biased-statements-likelihood">Likelihood</label>
+                                            <div class="rating-control">
+                                                <div class="rating" data-rating="0" id="biased-statements-likelihood">
+                                                    <span class="rating-item" data-value="1"><i class="far fa-circle"></i></span>
+                                                    <span class="rating-item" data-value="2"><i class="far fa-circle"></i></span>
+                                                    <span class="rating-item" data-value="3"><i class="far fa-circle"></i></span>
+                                                    <span class="rating-item" data-value="4"><i class="far fa-circle"></i></span>
+                                                    <span class="rating-item" data-value="5"><i class="far fa-circle"></i></span>
+                                                </div>
+                                                <div class="rating-label">Not Selected</div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="biased-statements-impact">Impact</label>
+                                            <div class="rating-control">
+                                                <div class="rating" data-rating="0" id="biased-statements-impact">
+                                                    <span class="rating-item" data-value="1"><i class="far fa-circle"></i></span>
+                                                    <span class="rating-item" data-value="2"><i class="far fa-circle"></i></span>
+                                                    <span class="rating-item" data-value="3"><i class="far fa-circle"></i></span>
+                                                    <span class="rating-item" data-value="4"><i class="far fa-circle"></i></span>
+                                                    <span class="rating-item" data-value="5"><i class="far fa-circle"></i></span>
+                                                </div>
+                                                <div class="rating-label">Not Selected</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="biased-statements-notes">Notes</label>
+                                        <textarea id="biased-statements-notes" rows="2" placeholder="Add details about the biased statements"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="factor-item">
+                                <div class="factor-question">
+                                    <p>Has the judge demonstrated hostility toward a party or counsel?</p>
+                                </div>
+                                <div class="factor-controls">
+                                    <div class="toggle-group">
+                                        <label class="toggle">
+                                            <input type="radio" name="hostility" value="no">
+                                            <span class="toggle-label">No</span>
+                                        </label>
+                                        <label class="toggle">
+                                            <input type="radio" name="hostility" value="yes">
+                                            <span class="toggle-label">Yes</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="factor-details" id="hostility-details">
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label for="hostility-likelihood">Likelihood</label>
+                                            <div class="rating-control">
+                                                <div class="rating" data-rating="0" id="hostility-likelihood">
+                                                    <span class="rating-item" data-value="1"><i class="far fa-circle"></i></span>
+                                                    <span class="rating-item" data-value="2"><i class="far fa-circle"></i></span>
+                                                    <span class="rating-item" data-value="3"><i class="far fa-circle"></i></span>
+                                                    <span class="rating-item" data-value="4"><i class="far fa-circle"></i></span>
+                                                    <span class="rating-item" data-value="5"><i class="far fa-circle"></i></span>
+                                                </div>
+                                                <div class="rating-label">Not Selected</div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="hostility-impact">Impact</label>
+                                            <div class="rating-control">
+                                                <div class="rating" data-rating="0" id="hostility-impact">
+                                                    <span class="rating-item" data-value="1"><i class="far fa-circle"></i></span>
+                                                    <span class="rating-item" data-value="2"><i class="far fa-circle"></i></span>
+                                                    <span class="rating-item" data-value="3"><i class="far fa-circle"></i></span>
+                                                    <span class="rating-item" data-value="4"><i class="far fa-circle"></i></span>
+                                                    <span class="rating-item" data-value="5"><i class="far fa-circle"></i></span>
+                                                </div>
+                                                <div class="rating-label">Not Selected</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="hostility-notes">Notes</label>
+                                        <textarea id="hostility-notes" rows="2" placeholder="Add details about the hostility"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="factor-group">
+                            <h3>Extrajudicial Statements</h3>
+                            
+                            <div class="factor-item">
+                                <div class="factor-question">
+                                    <p>Has the judge made public statements about the case?</p>
+                                </div>
+                                <div class="factor-controls">
+                                    <div class="toggle-group">
+                                        <label class="toggle">
+                                            <input type="radio" name="public-statements" value="no">
+                                            <span class="toggle-label">No</span>
+                                        </label>
+                                        <label class="toggle">
+                                            <input type="radio" name="public-statements" value="yes">
+                                            <span class="toggle-label">Yes</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="factor-details" id="public-statements-details">
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label for="public-statements-likelihood">Likelihood</label>
+                                            <div class="rating-control">
+                                                <div class="rating" data-rating="0" id="public-statements-likelihood">
+                                                    <span class="rating-item" data-value="1"><i class="far fa-circle"></i></span>
+                                                    <span class="rating-item" data-value="2"><i class="far fa-circle"></i></span>
+                                                    <span class="rating-item" data-value="3"><i class="far fa-circle"></i></span>
+                                                    <span class="rating-item" data-value="4"><i class="far fa-circle"></i></span>
+                                                    <span class="rating-item" data-value="5"><i class="far fa-circle"></i></span>
+                                                </div>
+                                                <div class="rating-label">Not Selected</div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="public-statements-impact">Impact</label>
+                                            <div class="rating-control">
+                                                <div class="rating" data-rating="0" id="public-statements-impact">
+                                                    <span class="rating-item" data-value="1"><i class="far fa-circle"></i></span>
+                                                    <span class="rating-item" data-value="2"><i class="far fa-circle"></i></span>
+                                                    <span class="rating-item" data-value="3"><i class="far fa-circle"></i></span>
+                                                    <span class="rating-item" data-value="4"><i class="far fa-circle"></i></span>
+                                                    <span class="rating-item" data-value="5"><i class="far fa-circle"></i></span>
+                                                </div>
+                                                <div class="rating-label">Not Selected</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="public-statements-notes">Notes</label>
+                                        <textarea id="public-statements-notes" rows="2" placeholder="Add details about the public statements"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="factor-group">
+                            <h3>Procedural Conduct</h3>
+                            
+                            <div class="factor-item">
+                                <div class="factor-question">
+                                    <p>Has the judge shown procedural favoritism to one party?</p>
+                                </div>
+                                <div class="factor-controls">
+                                    <div class="toggle-group">
+                                        <label class="toggle">
+                                            <input type="radio" name="procedural-favoritism" value="no">
+                                            <span class="toggle-label">No</span>
+                                        </label>
+                                        <label class="toggle">
+                                            <input type="radio" name="procedural-favoritism" value="yes">
+                                            <span class="toggle-label">Yes</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="factor-details" id="procedural-favoritism-details">
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label for="procedural-favoritism-likelihood">Likelihood</label>
+                                            <div class="rating-control">
+                                                <div class="rating" data-rating="0" id="procedural-favoritism-likelihood">
+                                                    <span class="rating-item" data-value="1"><i class="far fa-circle"></i></span>
+                                                    <span class="rating-item" data-value="2"><i class="far fa-circle"></i></span>
+                                                    <span class="rating-item" data-value="3"><i class="far fa-circle"></i></span>
+                                                    <span class="rating-item" data-value="4"><i class="far fa-circle"></i></span>
+                                                    <span class="rating-item" data-value="5"><i class="far fa-circle"></i></span>
+                                                </div>
+                                                <div class="rating-label">Not Selected</div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="procedural-favoritism-impact">Impact</label>
+                                            <div class="rating-control">
+                                                <div class="rating" data-rating="0" id="procedural-favoritism-impact">
+                                                    <span class="rating-item" data-value="1"><i class="far fa-circle"></i></span>
+                                                    <span class="rating-item" data-value="2"><i class="far fa-circle"></i></span>
+                                                    <span class="rating-item" data-value="3"><i class="far fa-circle"></i></span>
+                                                    <span class="rating-item" data-value="4"><i class="far fa-circle"></i></span>
+                                                    <span class="rating-item" data-value="5"><i class="far fa-circle"></i></span>
+                                                </div>
+                                                <div class="rating-label">Not Selected</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="procedural-favoritism-notes">Notes</label>
+                                        <textarea id="procedural-favoritism-notes" rows="2" placeholder="Add details about the procedural favoritism"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-actions">
+                            <button type="button" class="btn btn-secondary prev-section" data-prev="relationship-factors">Back</button>
+                            <button type="button" class="btn btn-primary next-section" data-next="contextual-factors">Continue to Contextual Factors</button>
+                        </div>
+                    </section>
+                    
+                    <!-- Contextual Factors Section -->
+                    <section class="calculator-section" id="contextual-factors-section">
+                        <h2>Contextual Factors</h2>
+                        <p class="section-description">Assess factors related to case context and external influences</p>
+                        
+                        <div class="factor-group">
+                            <h3>Political Considerations</h3>
+                            
+                            <div class="factor-item">
+                                <div class="factor-question">
+                                    <p>Is the case politically sensitive or high-profile?</p>
+                                </div>
+                                <div class="factor-controls">
+                                    <div class="toggle-group">
+                                        <label class="toggle">
+                                            <input type="radio" name="political-sensitivity" value="no">
+                                            <span class="toggle-label">No</span>
+                                        </label>
+                                        <label class="toggle">
+                                            <input type="radio" name="political-sensitivity" value="yes">
+                                            <span class="toggle-label">Yes</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="factor-details" id="political-sensitivity-details">
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label for="political-sensitivity-likelihood">Likelihood</label>
+                                            <div class="rating-control">
+                                                <div class="rating" data-rating="0" id="political-sensitivity-likelihood">
+                                                    <span class="rating-item" data-value="1"><i class="far fa-circle"></i></span>
+                                                    <span class="rating-item" data-value="2"><i class="far fa-circle"></i></span>
+                                                    <span class="rating-item" data-value="3"><i class="far fa-circle"></i></span>
+                                                    <span class="rating-item" data-value="4"><i class="far fa-circle"></i></span>
+                                                    <span class="rating-item" data-value="5"><i class="far fa-circle"></i></span>
+                                                </div>
+                                                <div class="rating-label">Not Selected</div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="political-sensitivity-impact">Impact</label>
+                                            <div class="rating-control">
+                                                <div class="rating" data-rating="0" id="political-sensitivity-impact">
+                                                    <span class="rating-item" data-value="1"><i class="far fa-circle"></i></span>
+                                                    <span class="rating-item" data-value="2"><i class="far fa-circle"></i></span>
+                                                    <span class="rating-item" data-value="3"><i class="far fa-circle"></i></span>
+                                                    <span class="rating-item" data-value="4"><i class="far fa-circle"></i></span>
+                                                    <span class="rating-item" data-value="5"><i class="far fa-circle"></i></span>
+                                                </div>
+                                                <div class="rating-label">Not Selected</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="political-sensitivity-notes">Notes</label>
+                                        <textarea id="political-sensitivity-notes" rows="2" placeholder="Add details about the political sensitivity"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="factor-item">
+                                <div class="factor-question">
+                                    <p>Has the judge received campaign contributions from any party?</p>
+                                </div>
+                                <div class="factor-controls">
+                                    <div class="toggle-group">
+                                        <label class="toggle">
+                                            <input type="radio" name="campaign-contributions" value="no">
+                                            <span class="toggle-label">No</span>
+                                        </label>
+                                        <label class="toggle">
+                                            <input type="radio" name="campaign-contributions" value="yes">
+                                            <span class="toggle-label">Yes</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="factor-details" id="campaign-contributions-details">
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label for="campaign-contributions-likelihood">Likelihood</label>
+                                            <div class="rating-control">
+                                                <div class="rating" data-rating="0" id="campaign-contributions-likelihood">
+                                                    <span class="rating-item" data-value="1"><i class="far fa-circle"></i></span>
+                                                    <span class="rating-item" data-value="2"><i class="far fa-circle"></i></span>
+                                                    <span class="rating-item" data-value="3"><i class="far fa-circle"></i></span>
+                                                    <span class="rating-item" data-value="4"><i class="far fa-circle"></i></span>
+                                                    <span class="rating-item" data-value="5"><i class="far fa-circle"></i></span>
+                                                </div>
+                                                <div class="rating-label">Not Selected</div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="campaign-contributions-impact">Impact</label>
+                                            <div class="rating-control">
+                                                <div class="rating" data-rating="0" id="campaign-contributions-impact">
+                                                    <span class="rating-item" data-value="1"><i class="far fa-circle"></i></span>
+                                                    <span class="rating-item" data-value="2"><i class="far fa-circle"></i></span>
+                                                    <span class="rating-item" data-value="3"><i class="far fa-circle"></i></span>
+                                                    <span class="rating-item" data-value="4"><i class="far fa-circle"></i></span>
+                                                    <span class="rating-item" data-value="5"><i class="far fa-circle"></i></span>
+                                                </div>
+                                                <div class="rating-label">Not Selected</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="campaign-contributions-notes">Notes</label>
+                                        <textarea id="campaign-contributions-notes" rows="2" placeholder="Add details about the campaign contributions"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="factor-group">
+                            <h3>Media Influence</h3>
+                            
+                            <div class="factor-item">
+                                <div class="factor-question">
+                                    <p>Has there been significant media coverage that could influence the judge?</p>
+                                </div>
+                                <div class="factor-controls">
+                                    <div class="toggle-group">
+                                        <label class="toggle">
+                                            <input type="radio" name="media-coverage" value="no">
+                                            <span class="toggle-label">No</span>
+                                        </label>
+                                        <label class="toggle">
+                                            <input type="radio" name="media-coverage" value="yes">
+                                            <span class="toggle-label">Yes</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="factor-details" id="media-coverage-details">
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label for="media-coverage-likelihood">Likelihood</label>
+                                            <div class="rating-control">
+                                                <div class="rating" data-rating="0" id="media-coverage-likelihood">
+                                                    <span class="rating-item" data-value="1"><i class="far fa-circle"></i></span>
+                                                    <span class="rating-item" data-value="2"><i class="far fa-circle"></i></span>
+                                                    <span class="rating-item" data-value="3"><i class="far fa-circle"></i></span>
+                                                    <span class="rating-item" data-value="4"><i class="far fa-circle"></i></span>
+                                                    <span class="rating-item" data-value="5"><i class="far fa-circle"></i></span>
+                                                </div>
+                                                <div class="rating-label">Not Selected</div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="media-coverage-impact">Impact</label>
+                                            <div class="rating-control">
+                                                <div class="rating" data-rating="0" id="media-coverage-impact">
+                                                    <span class="rating-item" data-value="1"><i class="far fa-circle"></i></span>
+                                                    <span class="rating-item" data-value="2"><i class="far fa-circle"></i></span>
+                                                    <span class="rating-item" data-value="3"><i class="far fa-circle"></i></span>
+                                                    <span class="rating-item" data-value="4"><i class="far fa-circle"></i></span>
+                                                    <span class="rating-item" data-value="5"><i class="far fa-circle"></i></span>
+                                                </div>
+                                                <div class="rating-label">Not Selected</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="media-coverage-notes">Notes</label>
+                                        <textarea id="media-coverage-notes" rows="2" placeholder="Add details about the media coverage"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-actions">
+                            <button type="button" class="btn btn-secondary prev-section" data-prev="conduct-factors">Back</button>
+                            <button type="button" class="btn btn-primary calculate-btn" data-next="results">Calculate Risk</button>
+                        </div>
+                    </section>
+                    
+                    <!-- Results Section -->
+                    <section class="calculator-section" id="results-section">
+                        <h2>Assessment Results</h2>
+                        <p class="section-description">Analysis of potential legal prejudice based on your inputs</p>
+                        
+                        <div class="results-container">
+                            <div class="results-summary">
+                                <div class="risk-score-container">
+                                    <div class="risk-score">
+                                        <div class="risk-score-value" id="risk-score-value">--</div>
+                                        <div class="risk-score-label">Risk Score</div>
+                                    </div>
+                                    <div class="risk-level" id="risk-level">
+                                        <span class="risk-level-label">Risk Level:</span>
+                                        <span class="risk-level-value">Not Calculated</span>
+                                    </div>
+                                    <div class="confidence-score">
+                                        <div class="confidence-bar">
+                                            <div class="confidence-fill" id="confidence-fill" style="width: 0%"></div>
+                                        </div>
+                                        <div class="confidence-label">
+                                            <span>Confidence:</span>
+                                            <span id="confidence-value">0%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="factor-summary">
+                                    <h3>Factor Summary</h3>
+                                    <div class="factor-stats">
+                                        <div class="factor-stat">
+                                            <div class="stat-value" id="total-factors">0</div>
+                                            <div class="stat-label">Total Factors</div>
+                                        </div>
+                                        <div class="factor-stat">
+                                            <div class="stat-value" id="critical-factors">0</div>
+                                            <div class="stat-label">Critical Factors</div>
+                                        </div>
+                                        <div class="factor-stat">
+                                            <div class="stat-value" id="high-impact">0</div>
+                                            <div class="stat-label">High Impact</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="results-visualizations">
+                                <div class="visualization-tabs">
+                                    <button class="viz-tab active" data-tab="risk-matrix">Risk Matrix</button>
+                                    <button class="viz-tab" data-tab="factor-chart">Factor Analysis</button>
+                                    <button class="viz-tab" data-tab="category-comparison">Category Comparison</button>
+                                </div>
+                                
+                                <div class="visualization-content">
+                                    <div class="viz-panel active" id="risk-matrix-panel">
+                                        <h3>Risk Matrix</h3>
+                                        <div class="matrix-container">
+                                            <canvas id="risk-matrix-chart"></canvas>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="viz-panel" id="factor-chart-panel">
+                                        <h3>Factor Analysis</h3>
+                                        <div class="factor-chart-container">
+                                            <canvas id="factor-chart"></canvas>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="viz-panel" id="category-comparison-panel">
+                                        <h3>Category Comparison</h3>
+                                        <div class="category-chart-container">
+                                            <canvas id="category-chart"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="recommendations-container">
+                                <h3>Recommended Actions</h3>
+                                <div class="recommendations-content" id="recommendations-content">
+                                    <p>Complete the assessment to receive recommendations.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="results-actions">
+                                <button type="button" class="btn btn-secondary prev-section" data-prev="contextual-factors">Back</button>
+                                <button type="button" class="btn btn-primary" id="save-assessment-btn">Save Assessment</button>
+                                <button type="button" class="btn btn-secondary" id="export-pdf-btn">Export PDF</button>
+                                <button type="button" class="btn btn-secondary" id="start-new-btn">Start New Assessment</button>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            
+            <!-- Login/Register Modal -->
+            <div class="modal" id="login-modal">
+                <div class="modal-content">
+                    <span class="close-modal">&times;</span>
+                    <div class="modal-tabs">
+                        <button class="modal-tab active" data-tab="login">Login</button>
+                        <button class="modal-tab" data-tab="register">Register</button>
+                    </div>
+                    
+                    <div class="modal-body">
+                        <div class="modal-panel active" id="login-panel">
+                            <h3>Login to Your Account</h3>
+                            <form id="login-form">
+                                <div class="form-group">
+                                    <label for="login-email">Email</label>
+                                    <input type="email" id="login-email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="login-password">Password</label>
+                                    <input type="password" id="login-password" required>
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-primary">Login</button>
+                                </div>
+                                <div class="form-group text-center">
+                                    <a href="#" class="forgot-password">Forgot Password?</a>
+                                </div>
+                            </form>
+                        </div>
+                        
+                        <div class="modal-panel" id="register-panel">
+                            <h3>Create an Account</h3>
+                            <form id="register-form">
+                                <div class="form-group">
+                                    <label for="register-name">Full Name</label>
+                                    <input type="text" id="register-name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="register-email">Email</label>
+                                    <input type="email" id="register-email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="register-password">Password</label>
+                                    <input type="password" id="register-password" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="register-confirm-password">Confirm Password</label>
+                                    <input type="password" id="register-confirm-password" required>
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-primary">Register</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="assets/logo-white.png" alt="Legal Prejudice Analysis Logo">
+                    <p>Advanced tools for legal prejudice analysis and risk assessment.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-links-column">
+                        <h4>Calculator</h4>
+                        <ul>
+                            <li><a href="#">Risk Assessment</a></li>
+                            <li><a href="#">Saved Assessments</a></li>
+                            <li><a href="#">Export Options</a></li>
+                            <li><a href="#">Methodology</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-links-column">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li><a href="#">Documentation</a></li>
+                            <li><a href="#">Legal Framework</a></li>
+                            <li><a href="#">Case Studies</a></li>
+                            <li><a href="#">Research</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-links-column">
+                        <h4>Support</h4>
+                        <ul>
+                            <li><a href="#">Help Center</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">FAQs</a></li>
+                            <li><a href="#">Tutorials</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-links-column">
+                        <h4>Legal</h4>
+                        <ul>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Disclaimer</a></li>
+                            <li><a href="#">Licensing</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="copyright">
+                    &copy; 2025 Legal Prejudice Analysis. All rights reserved.
+                </div>
+                <div class="social-links">
+                    <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+total 884
+drwxr-xr-x  1 root root   4096 Aug 30 17:01 .
+drwxr-xr-x  1 root root    122 Aug 30 16:37 ..
+-rw-r--r--  1 root root     29 Aug 30 06:36 .created
+drwxr-xr-x  2 root root     36 Aug 29 14:06 .github
+-rw-r--r--  1 root root   3633 Aug 29 13:10 CODE_OF_CONDUCT.md
+-rw-r--r--  1 root root   3543 Aug 29 13:10 CONTRIBUTING.md
+-rw-r--r--  1 root root   1088 Aug 29 13:10 LICENSE
+-rw-r--r--  1 root root   2896 Aug 29 13:09 README.md
+-rw-r--r--  1 root root   1955 Aug 30 00:08 README_for_guides.md
+-rw-r--r--  1 root root  64071 Aug 29 13:58 Screenshot 2025-08-29 085751.png
+-rw-r--r--  1 root root 129488 Aug 29 17:40 Screenshot 2025-08-29 123957.png
+-rw-r--r--  1 root root 138688 Aug 29 17:41 Screenshot 2025-08-29 124129.png
+-rw-r--r--  1 root root    880 Aug 29 23:53 Secure legafvnf.coreftp
+-rw-r--r--  1 root root   6285 Aug 30 16:52 api_structure.md
+-rw-r--r--  1 root root   6670 Aug 29 23:17 calculator-enhancement-plan.md
+-rw-r--r--  1 root root  10006 Aug 30 00:08 cpanel_upload_detailed_guide.md
+-rw-r--r--  1 root root   3166 Aug 30 00:07 cpanel_upload_guide.md
+-rw-r--r--  1 root root   5111 Aug 30 16:51 demo_structure.md
+-rwxr-xr-x  1 root root   1289 Aug 29 23:59 deploy_to_ftp.sh
+-rw-r--r--  1 root root   3098 Aug 30 00:09 deployment_summary.md
+-rw-r--r--  1 root root   2352 Aug 30 16:49 dns_configuration_guide.md
+drwxr-xr-x  3 root root   4096 Aug 29 13:15 docker
+drwxr-xr-x 11 root root   4096 Aug 29 17:37 docs
+drwxr-xr-x  4 root root     88 Aug 30 17:07 docs_new
+-rw-r--r--  1 root root   4721 Aug 30 16:50 docs_structure.md
+-rw-r--r--  1 root root   6101 Aug 30 16:52 downloads_structure.md
+drwxr-xr-x  5 root root    105 Aug 29 23:25 enhanced-calculator
+-rw-r--r--  1 root root   4701 Aug 30 00:07 enhanced_calculator_guide.md
+-rw-r--r--  1 root root   4834 Aug 30 16:53 forum_structure.md
+-rw-r--r--  1 root root    103 Aug 30 00:00 ftp_commands.txt
+-rw-r--r--  1 root root   1529 Aug 30 00:02 ftp_debug.py
+-rw-r--r--  1 root root   1246 Aug 30 00:01 ftp_upload.py
+-rw-r--r--  1 root root   6798 Aug 29 13:16 github-resources-summary.md
+-rw-r--r--  1 root root  10317 Aug 29 13:15 github-setup-guide.md
+-rw-r--r--  1 root root   6691 Aug 29 13:08 github_integration_plan.md
+-rw-r--r--  1 root root   7932 Aug 30 16:54 github_repository_structure.md
+-rw-r--r--  1 root root   4289 Aug 30 16:50 implementation_plan.md
+-rw-r--r--  1 root root   5072 Aug 30 00:02 index.html
+drwxr-xr-x  5 root root   4096 Aug 29 15:52 landing-page
+-rw-r--r--  1 root root    877 Aug 29 23:53 legafvnf.coreftp
+-rw-r--r--  1 root root  11852 Aug 29 06:43 legal_prejudice_analysis_framework.md
+-rw-r--r--  1 root root  37790 Aug 29 06:49 legal_prejudice_case_studies.md
+-rw-r--r--  1 root root  30976 Aug 29 07:24 legal_prejudice_comparative_law_perspectives.md
+-rw-r--r--  1 root root  11921 Aug 29 07:18 legal_prejudice_cross_reference_guide.md
+-rw-r--r--  1 root root   5840 Aug 29 07:17 legal_prejudice_executive_summary.md
+-rw-r--r--  1 root root  28945 Aug 29 07:27 legal_prejudice_future_development.md
+-rw-r--r--  1 root root   9209 Aug 29 07:28 legal_prejudice_project_components.md
+-rw-r--r--  1 root root  14835 Aug 29 07:25 legal_prejudice_project_summary.md
+-rw-r--r--  1 root root  23260 Aug 29 07:22 legal_prejudice_quick_reference_guides.md
+-rw-r--r--  1 root root  24056 Aug 29 06:45 legal_prejudice_risk_probability_analysis.md
+-rw-r--r--  1 root root  16429 Aug 29 07:19 legal_prejudice_technology_integration.md
+-rw-r--r--  1 root root  13959 Aug 29 07:20 legal_prejudice_training_materials.md
+-rw-r--r--  1 root root   9908 Aug 29 07:18 legal_prejudice_visual_roadmap.md
+-rw-r--r--  1 root root   1622 Aug 30 16:57 new_todo.md
+drwxr-xr-x  1 root root    154 Aug 30 17:12 outputs
+-rw-r--r--  1 root root  26869 Aug 29 06:47 practical_guide_legal_prejudice_analysis.md
+drwxr-xr-x  6 root root   4096 Aug 29 11:59 prejudice_risk_calculator
+-rw-r--r--  1 root root   4335 Aug 30 16:54 project_summary.md
+drwxr-xr-x  1 root root  12288 Aug 30 17:12 summarized_conversations
+-rw-r--r--  1 root root    396 Aug 30 00:01 test.html
+-rw-r--r--  1 root root   3339 Aug 30 00:09 todo.md
+-rw-r--r--  1 root root  20914 Aug 30 16:49 updated_index.html
+-rw-r--r--  1 root root    464 Aug 30 00:01 upload_test.sh
+-rw-r--r--  1 root root   4038 Aug 30 00:07 website_structure_guide.md

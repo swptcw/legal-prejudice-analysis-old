@@ -1,0 +1,18 @@
+docs_new/assets/css/:
+total 16
+drwxr-xr-x 2 root root    32 Aug 30 17:04 .
+drwxr-xr-x 4 root root    39 Aug 30 17:05 ..
+-rw-r--r-- 1 root root 15624 Aug 30 17:04 styles.css
+
+docs_new/assets/js/:
+total 20
+drwxr-xr-x 2 root root    50 Aug 30 17:06 .
+drwxr-xr-x 4 root root    39 Aug 30 17:05 ..
+-rw-r--r-- 1 root root  7830 Aug 30 17:05 main.js
+-rw-r--r-- 1 root root 10635 Aug 30 17:06 search.js
+
+docs_new/framework/:
+total 24
+drwxr-xr-x 2 root root    32 Aug 30 17:07 .
+drwxr-xr-x 4 root root    88 Aug 30 17:07 ..
+-rw-r--r-- 1 root root 24054 Aug 30 17:07 index.html

@@ -1,0 +1,1 @@
+{'role': 'user', 'content': 'FTP Username: legafvnf\nFTP server: ftp.legal-prejudice-analysis.com\nFTP & explicit FTPS port:  21'}

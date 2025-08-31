@@ -1,0 +1,1 @@
+{'role': 'assistant', 'content': 'Let\'s try a different approach with lftp. Let\'s create a simpler script that uses lftp\'s batch mode:\n\n<function_calls>\n<create-file file_path="ftp_commands.txt">\nset ssl:verify-certificate no\ncd /\nput README.md\nput LICENSE\nput CODE_OF_CONDUCT.md\nput CONTRIBUTING.md\n</create-file>\n</function_calls>', 'tool_calls': None}

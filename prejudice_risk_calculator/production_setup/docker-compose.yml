@@ -1,0 +1,74 @@
+version: '3.8'
+
+services:
+  api:
+    build: .
+    restart: always
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+      - redis
+    environment:
+      - FLASK_APP=app.py
+      - FLASK_CONFIG=production
+      - DATABASE_URL=postgresql://prejudice:${DB_PASSWORD}@db:5432/prejudice_risk
+      - REDIS_URL=redis://redis:6379/0
+      - SECRET_KEY=${SECRET_KEY}
+      - JWT_SECRET_KEY=${JWT_SECRET_KEY}
+      - CORS_ORIGINS=${CORS_ORIGINS:-*}
+      - LOG_LEVEL=INFO
+      - BEHIND_PROXY=true
+      - PROXY_X_FOR=1
+      - PROXY_X_PROTO=1
+      - ENABLE_WEBHOOKS=true
+      - ENABLE_METRICS=true
+    volumes:
+      - ./logs:/app/logs
+    networks:
+      - prejudice_network
+
+  db:
+    image: postgres:14-alpine
+    restart: always
+    environment:
+      - POSTGRES_USER=prejudice
+      - POSTGRES_PASSWORD=${DB_PASSWORD}
+      - POSTGRES_DB=prejudice_risk
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    networks:
+      - prejudice_network
+
+  redis:
+    image: redis:7-alpine
+    restart: always
+    volumes:
+      - redis_data:/data
+    networks:
+      - prejudice_network
+
+  nginx:
+    image: nginx:1.23-alpine
+    restart: always
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx/conf.d:/etc/nginx/conf.d
+      - ./nginx/ssl:/etc/nginx/ssl
+      - ./static:/usr/share/nginx/html
+    depends_on:
+      - api
+    networks:
+      - prejudice_network
+
+networks:
+  prejudice_network:
+    driver: bridge
+
+volumes:
+  postgres_data:
+  redis_data:

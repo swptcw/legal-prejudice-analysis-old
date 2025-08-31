@@ -1,0 +1,5 @@
+total 0
+drwxr-xr-x 4 root root 39 Aug 30 17:05 .
+drwxr-xr-x 4 root root 88 Aug 30 17:07 ..
+drwxr-xr-x 2 root root 32 Aug 30 17:04 css
+drwxr-xr-x 2 root root 50 Aug 30 17:06 js

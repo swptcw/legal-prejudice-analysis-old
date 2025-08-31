@@ -1,0 +1,1 @@
+{'role': 'user', 'content': 'i have purchased the domain name legal-prejudice-analysis.com . lets continue  with the next step'}

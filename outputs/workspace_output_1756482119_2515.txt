@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/workspace/landing-page/create_logo.py", line 63, in <module>
+    logo.save('landing-page/assets/logo.png')
+  File "/usr/local/lib/python3.11/site-packages/PIL/Image.py", line 2436, in save
+    fp = builtins.open(filename, "w+b")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'landing-page/assets/logo.png'

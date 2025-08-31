@@ -1,0 +1,8 @@
+Documentation image created successfully!
+Demo preview image created successfully!
+Created assets/logo-clio.png
+Created assets/logo-practice-panther.png
+Created assets/logo-mycase.png
+Created assets/logo-smokeball.png
+Created assets/logo-filevine.png
+All additional images created successfully!

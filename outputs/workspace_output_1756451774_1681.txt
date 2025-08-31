@@ -1,0 +1,20 @@
+# COMPREHENSIVE LEGAL PREJUDICE ANALYSIS FRAMEWORK
+
+## I. INTRODUCTION
+
+This framework provides a structured approach to analyzing legal prejudice, assessing associated risks, and evaluating probabilities in legal contexts. It is designed to ensure thorough examination of potential prejudice in legal proceedings while maximizing the use of record citations and authoritative sources.
+
+## II. DEFINING LEGAL PREJUDICE
+
+### A. Legal Definitions and Standards
+
+1. **Statutory Definitions**
+   - 28 U.S.C. § 455(a): "Any justice, judge, or magistrate judge of the United States shall disqualify himself in any proceeding in which his impartiality might reasonably be questioned."
+   - 28 U.S.C. § 455(b)(1): Disqualification required where the judge "has a personal bias or prejudice concerning a party, or personal knowledge of disputed evidentiary facts concerning the proceeding."
+   - 28 U.S.C. § 144: Requires disqualification for "personal bias or prejudice" upon filing of a sufficient affidavit.
+
+2. **Judicial Interpretations**
+   - *Liteky v. United States*, 510 U.S. 540 (1994): Established the "extrajudicial source" doctrine, holding that bias or prejudice must typically stem from an extrajudicial source to warrant disqualification.
+   - *Caperton v. A.T. Massey Coal Co.*, 556 U.S. 868 (2009): Established that due process requires judicial recusal when "the probability of actual bias on the part of the judge or decisionmaker is too high to be constitutionally tolerable."
+   - *Liljeberg v. Health Services Acquisition Corp.*, 486 U.S. 847 (1988): Clarified that § 455(a) requires disqualification based on appearance of partiality, even if the judge was unaware of the disqualifying circumstance.
+

@@ -1,0 +1,6 @@
+set ssl:verify-certificate no
+cd /
+put README.md
+put LICENSE
+put CODE_OF_CONDUCT.md
+put CONTRIBUTING.md

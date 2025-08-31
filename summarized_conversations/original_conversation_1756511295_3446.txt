@@ -1,0 +1,1 @@
+{'role': 'user', 'content': '<tool_result> <see-image> ToolResult(success=True, output="Successfully loaded the image \'Screenshot 2025-08-29 085751.png\'.") </see-image> </tool_result>'}

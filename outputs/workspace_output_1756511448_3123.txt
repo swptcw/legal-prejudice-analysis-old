@@ -1,0 +1,18 @@
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following NEW packages will be installed:
+  lftp
+0 upgraded, 1 newly installed, 0 to remove and 13 not upgraded.
+Need to get 774 kB of archives.
+After this operation, 2418 kB of additional disk space will be used.
+Get:1 http://deb.debian.org/debian bookworm/main amd64 lftp amd64 4.9.2-2+b1 [774 kB]
+debconf: delaying package configuration, since apt-utils is not installed
+Fetched 774 kB in 0s (6843 kB/s)
+Selecting previously unselected package lftp.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 52524 files and directories currently installed.)
+Preparing to unpack .../lftp_4.9.2-2+b1_amd64.deb ...
+Unpacking lftp (4.9.2-2+b1) ...
+Setting up lftp (4.9.2-2+b1) ...
+Processing triggers for hicolor-icon-theme (0.17-2) ...
+Processing triggers for mailcap (3.70+nmu1) ...

@@ -1,0 +1,1 @@
+{'role': 'user', 'content': [{'type': 'text', 'text': "Here is the image you requested to see: 'Screenshot 2025-08-29 124129.png'"}]}

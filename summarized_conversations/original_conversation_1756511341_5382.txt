@@ -1,0 +1,1 @@
+{'role': 'user', 'content': 'i do not have a terminal for these commands'}

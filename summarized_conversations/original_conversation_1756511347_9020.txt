@@ -1,0 +1,1 @@
+{'role': 'user', 'content': 'the dns label must contain only the following characters'}

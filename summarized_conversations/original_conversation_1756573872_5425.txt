@@ -1,0 +1,1 @@
+{'role': 'assistant', 'content': "Now let's run the deployment script to upload all the files:\n\n<function_calls>\n<execute-command>\n./deploy_to_ftp.sh\n</execute-command>\n</function_calls>", 'tool_calls': None}

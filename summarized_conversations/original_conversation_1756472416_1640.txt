@@ -1,0 +1,1 @@
+{'role': 'assistant', 'content': 'Let\'s start the server and expose the port so you can access the application:\n\n<function_calls>\n<execute-command session_name="server" blocking="false">\ncd prejudice_risk_calculator && python server.py\n</execute-command>\n</function_calls>', 'tool_calls': None}

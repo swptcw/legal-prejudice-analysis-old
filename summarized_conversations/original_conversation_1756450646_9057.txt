@@ -1,0 +1,1 @@
+{'role': 'user', 'content': '\r\nLegal prejudice analysis, risks and probabilities analysis, ensure nothing is underdeveloped and that the record citations and authorities are maximized\r\n'}

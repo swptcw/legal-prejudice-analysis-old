@@ -1,0 +1,35 @@
+# Legal Prejudice Risk Calculator API Server
+# Production Requirements
+
+# Core Dependencies
+Flask==2.3.3
+Flask-RESTful==0.3.10
+Flask-Cors==4.0.0
+gunicorn==21.2.0
+python-dotenv==1.0.0
+
+# Database
+SQLAlchemy==2.0.20
+psycopg2-binary==2.9.7
+Flask-SQLAlchemy==3.1.1
+alembic==1.12.0
+
+# Authentication & Security
+PyJWT==2.8.0
+cryptography==41.0.3
+bcrypt==4.0.1
+flask-limiter==3.5.0
+
+# Validation
+marshmallow==3.20.1
+jsonschema==4.19.0
+
+# Logging & Monitoring
+structlog==23.1.0
+prometheus-flask-exporter==0.22.4
+sentry-sdk==1.30.0
+
+# Utilities
+requests==2.31.0
+python-dateutil==2.8.2
+tenacity==8.2.3

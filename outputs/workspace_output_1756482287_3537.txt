@@ -1,0 +1,7 @@
+Created assets/features/feature-framework.jpg
+Created assets/features/feature-risk.jpg
+Created assets/features/feature-guide.jpg
+Created assets/features/feature-calculator.jpg
+Created assets/features/feature-api.jpg
+Created assets/features/feature-case.jpg
+All feature images created successfully!

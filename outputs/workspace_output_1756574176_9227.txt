@@ -1,0 +1,20 @@
+# PRACTICAL GUIDE TO LEGAL PREJUDICE ANALYSIS
+## A Risk-Based Approach for Legal Practitioners
+
+## INTRODUCTION
+
+This practical guide provides legal practitioners with concrete tools and methodologies for analyzing legal prejudice through a risk-based approach. While theoretical frameworks offer valuable structure, practitioners need actionable techniques that can be applied in real-world litigation scenarios. This guide bridges theory and practice by offering step-by-step processes, worksheets, checklists, and decision matrices that can be immediately implemented in your legal practice.
+
+## I. INITIAL ASSESSMENT: THE 48-HOUR PREJUDICE EVALUATION
+
+When potential prejudice concerns arise, conduct a rapid initial assessment within 48 hours to determine whether immediate action is required.
+
+### A. Prejudice Triage Checklist
+
+**Instructions**: Complete this checklist immediately upon identifying potential prejudice concerns. Any "Yes" answer indicates a high-priority issue requiring prompt attention.
+
+| Question | Yes | No |
+|----------|-----|-----|
+| Does the situation involve a clear statutory disqualification factor under 28 U.S.C. § 455(b)? | □ | □ |
+| Has the judge made explicit statements suggesting prejudgment of key issues? | □ | □ |
+| Does the judge have a personal relationship with a party, witness, or counsel? | □ | □ |

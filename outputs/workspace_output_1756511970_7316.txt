@@ -1,0 +1,132 @@
+Uploading main documentation files...
+Usage: quote <cmd>
+set cmd:prompt "lftp \\S\\? \\u\\@\\h:\\w> "
+set cmd:term-status/*rxvt* "\\e[11;0]\\e]2;\\T\\007\\e[11]"
+set cmd:term-status/*screen* \\e_\\T\\e\\
+set cmd:term-status/*xterm* "\\e[11;0]\\e]2;\\T\\007\\e[11]"
+set dns:order "inet6 inet"
+set file:charset UTF-8
+set ftp:auto-sync-mode "icrosoft FTP Service|MadGoat|MikroTik"
+set ftp:sync-mode/ftp.idsoftware.com on
+set ftp:sync-mode/ftp.microsoft.com on
+set ftp:sync-mode/sunsolve.sun.com on
+set xfer:max-redirections 10
+Unknown command `{'.
+parse: missing redirection filename
+Unknown command `1'.
+cat: /workspace/outputs/workspace_output_1756512035_1203.txt: Fatal error: Certificate verification: certificate common name doesn't match requested host name ‘ftp.legal-prejudice-analysis.com’ (63:21:45:77:00:65:95:EA:21:D6:14:CE:E4:C0:50:59:47:7D:B3:CF)
+Unknown command `}'.
+parse: missing redirection filename
+Unknown command `1'.
+Unknown command `{'.
+parse: missing redirection filename
+Unknown command `1'.
+cat: /workspace/outputs/workspace_output_1756512046_365.txt: Fatal error: Certificate verification: certificate common name doesn't match requested host name ‘ftp.legal-prejudice-analysis.com’ (63:21:45:77:00:65:95:EA:21:D6:14:CE:E4:C0:50:59:47:7D:B3:CF)
+Unknown command `}'.
+parse: missing redirection filename
+Unknown command `1'.
+Unknown command `{'.
+parse: missing redirection filename
+Unknown command `1'.
+cat: /workspace/outputs/workspace_output_1756512051_5802.txt: Fatal error: Certificate verification: certificate common name doesn't match requested host name ‘ftp.legal-prejudice-analysis.com’ (63:21:45:77:00:65:95:EA:21:D6:14:CE:E4:C0:50:59:47:7D:B3:CF)
+Unknown command `}'.
+parse: missing redirection filename
+Unknown command `1'.
+Unknown command `{'.
+Unknown command `python3'.
+parse: missing redirection filename
+Unknown command `1'.
+cat: /workspace/outputs/workspace_output_1756512065_5774.txt: Fatal error: Certificate verification: certificate common name doesn't match requested host name ‘ftp.legal-prejudice-analysis.com’ (63:21:45:77:00:65:95:EA:21:D6:14:CE:E4:C0:50:59:47:7D:B3:CF)
+Unknown command `}'.
+parse: missing redirection filename
+Unknown command `1'.
+Unknown command `{'.
+parse: missing redirection filename
+Unknown command `1'.
+cat: /workspace/outputs/workspace_output_1756512077_6909.txt: Fatal error: Certificate verification: certificate common name doesn't match requested host name ‘ftp.legal-prejudice-analysis.com’ (63:21:45:77:00:65:95:EA:21:D6:14:CE:E4:C0:50:59:47:7D:B3:CF)
+Unknown command `}'.
+parse: missing redirection filename
+Unknown command `1'.
+Unknown command `{'.
+parse: missing redirection filename
+Unknown command `1'.
+cat: /workspace/outputs/workspace_output_1756512088_8469.txt: Fatal error: Certificate verification: certificate common name doesn't match requested host name ‘ftp.legal-prejudice-analysis.com’ (63:21:45:77:00:65:95:EA:21:D6:14:CE:E4:C0:50:59:47:7D:B3:CF)
+Unknown command `}'.
+parse: missing redirection filename
+Unknown command `1'.
+Unknown command `{'.
+parse: missing redirection filename
+Unknown command `1'.
+cat: /workspace/outputs/workspace_output_1756512093_9551.txt: Fatal error: Certificate verification: certificate common name doesn't match requested host name ‘ftp.legal-prejudice-analysis.com’ (63:21:45:77:00:65:95:EA:21:D6:14:CE:E4:C0:50:59:47:7D:B3:CF)
+Unknown command `}'.
+parse: missing redirection filename
+Unknown command `1'.
+Unknown command `{'.
+parse: missing redirection filename
+Unknown command `1'.
+cat: /workspace/outputs/workspace_output_1756512117_4418.txt: Fatal error: Certificate verification: certificate common name doesn't match requested host name ‘ftp.legal-prejudice-analysis.com’ (63:21:45:77:00:65:95:EA:21:D6:14:CE:E4:C0:50:59:47:7D:B3:CF)
+Unknown command `}'.
+parse: missing redirection filename
+Unknown command `1'.
+Unknown command `{'.
+parse: missing redirection filename
+Unknown command `1'.
+cat: /workspace/outputs/workspace_output_1756512123_2854.txt: Fatal error: Certificate verification: certificate common name doesn't match requested host name ‘ftp.legal-prejudice-analysis.com’ (63:21:45:77:00:65:95:EA:21:D6:14:CE:E4:C0:50:59:47:7D:B3:CF)
+Unknown command `}'.
+parse: missing redirection filename
+Unknown command `1'.
+Unknown command `{'.
+parse: missing redirection filename
+Unknown command `1'.
+cat: /workspace/outputs/workspace_output_1756512129_8348.txt: Fatal error: Certificate verification: certificate common name doesn't match requested host name ‘ftp.legal-prejudice-analysis.com’ (63:21:45:77:00:65:95:EA:21:D6:14:CE:E4:C0:50:59:47:7D:B3:CF)
+Unknown command `}'.
+parse: missing redirection filename
+Unknown command `1'.
+Unknown command `{'.
+parse: missing redirection filename
+Unknown command `1'.
+cat: /workspace/outputs/workspace_output_1756512148_2489.txt: Fatal error: Certificate verification: certificate common name doesn't match requested host name ‘ftp.legal-prejudice-analysis.com’ (63:21:45:77:00:65:95:EA:21:D6:14:CE:E4:C0:50:59:47:7D:B3:CF)
+Unknown command `}'.
+parse: missing redirection filename
+Unknown command `1'.
+Unknown command `{'.
+parse: missing redirection filename
+Unknown command `1'.
+cat: /workspace/outputs/workspace_output_1756512178_4428.txt: Fatal error: Certificate verification: certificate common name doesn't match requested host name ‘ftp.legal-prejudice-analysis.com’ (63:21:45:77:00:65:95:EA:21:D6:14:CE:E4:C0:50:59:47:7D:B3:CF)
+Unknown command `}'.
+parse: missing redirection filename
+Unknown command `1'.
+Unknown command `{'.
+parse: missing redirection filename
+Unknown command `1'.
+cat: /workspace/outputs/workspace_output_1756512187_6614.txt: Fatal error: Certificate verification: certificate common name doesn't match requested host name ‘ftp.legal-prejudice-analysis.com’ (63:21:45:77:00:65:95:EA:21:D6:14:CE:E4:C0:50:59:47:7D:B3:CF)
+Unknown command `}'.
+parse: missing redirection filename
+Unknown command `1'.
+Unknown command `{'.
+Unknown command `cp'.
+Unknown command `cp'.
+Unknown command `cp'.
+ls: ls -la website_files: Fatal error: Certificate verification: certificate common name doesn't match requested host name ‘ftp.legal-prejudice-analysis.com’ (63:21:45:77:00:65:95:EA:21:D6:14:CE:E4:C0:50:59:47:7D:B3:CF)
+parse: missing redirection filename
+Unknown command `1'.
+cat: /workspace/outputs/workspace_output_1756512405_2765.txt: Fatal error: Certificate verification: certificate common name doesn't match requested host name ‘ftp.legal-prejudice-analysis.com’ (63:21:45:77:00:65:95:EA:21:D6:14:CE:E4:C0:50:59:47:7D:B3:CF)
+Unknown command `}'.
+parse: missing redirection filename
+Unknown command `1'.
+Unknown command `{'.
+parse: missing redirection filename
+Unknown command `1'.
+cat: /workspace/outputs/workspace_output_1756512412_2091.txt: Fatal error: Certificate verification: certificate common name doesn't match requested host name ‘ftp.legal-prejudice-analysis.com’ (63:21:45:77:00:65:95:EA:21:D6:14:CE:E4:C0:50:59:47:7D:B3:CF)
+Unknown command `}'.
+parse: missing redirection filename
+Unknown command `1'.
+Unknown command `{'.
+Unknown command `cp'.
+ls: ls -la deployment_guides/: Fatal error: Certificate verification: certificate common name doesn't match requested host name ‘ftp.legal-prejudice-analysis.com’ (63:21:45:77:00:65:95:EA:21:D6:14:CE:E4:C0:50:59:47:7D:B3:CF)
+parse: missing redirection filename
+Unknown command `1'.
+cat: /workspace/outputs/workspace_output_1756512573_1973.txt: Fatal error: Certificate verification: certificate common name doesn't match requested host name ‘ftp.legal-prejudice-analysis.com’ (63:21:45:77:00:65:95:EA:21:D6:14:CE:E4:C0:50:59:47:7D:B3:CF)
+Unknown command `}'.
+parse: missing redirection filename
+Unknown command `1'.
